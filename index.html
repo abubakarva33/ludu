@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="ludu">
+        <div class="container" id="container">
+            <div class="red main-box">
+                <div class="inner-box">
+                    <div class="inner-innerbox red "></div>
+                    <div class="inner-innerbox red"></div>
+                    <div class="inner-innerbox red"></div>
+                    <div class="inner-innerbox red"></div>
+                </div>
+            </div>
+
+            <div class="long-box">
+                <div class="board"></div>
+                <div class="board"></div>
+                <div class="board"></div>
+                <div class="board"></div>
+                <div class="board green"></div>
+                <div class="board green"></div>
+                <div class="board"></div>
+                <div class="board green"></div>
+                <div class="board"></div>
+                <div class="board"></div>
+                <div class="board green"></div>
+                <div class="board"></div>
+                <div class="board"></div>
+                <div class="board green"></div>
+                <div class="board"></div>
+                <div class="board"></div>
+                <div class="board green"></div>
+                <div class="board"></div>
+            </div>
+            <div class="green main-box">
+                <div class="inner-box">
+                    <div class="inner-innerbox green"></div>
+                    <div class="inner-innerbox green"></div>
+                    <div class="inner-innerbox green"></div>
+                    <div class="inner-innerbox green "></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="long-box side">
+                    <div class="board"></div>
+                    <div class="board red"></div>
+                    <div class="board"></div>
+                    <div class="board"></div>
+                    <div class="board"></div>
+                    <div class="board"></div>
+                    <div class="board"></div>
+                    <div class="board red"></div>
+                    <div class="board red"></div>
+                    <div class="board red"></div>
+                    <div class="board red"></div>
+                    <div class="board red"></div>
+                    <div class="board"></div>
+                    <div class="board"></div>
+                    <div class="board"></div>
+                    <div class="board"></div>
+                    <div class="board"></div>
+                    <div class="board"></div>
+                </div>
+            </div>
+            <div class="box"></div>
+            <div class="box">
+                <div class="long-box side">
+                    <div class="board"></div>
+                    <div class="board"></div>
+                    <div class="board"></div>
+                    <div class="board"></div>
+                    <div class="board"></div>
+                    <div class="board"></div>
+                    <div class="board yellow"></div>
+                    <div class="board yellow"></div>
+                    <div class="board yellow"></div>
+                    <div class="board yellow"></div>
+                    <div class="board yellow"></div>
+                    <div class="board"></div>
+                    <div class="board"></div>
+                    <div class="board"></div>
+                    <div class="board"></div>
+                    <div class="board"></div>
+                    <div class="board yellow"></div>
+                    <div class="board"></div>
+                </div>
+            </div>
+            <div class="blue main-box">
+                <div class="inner-box">
+                    <div class="inner-innerbox blue"></div>
+                    <div class="inner-innerbox blue"></div>
+                    <div class="inner-innerbox blue"></div>
+                    <div class="inner-innerbox blue"></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="long-box">
+                    <div class="board"></div>
+                    <div class="board blue"></div>
+                    <div class="board"></div>
+                    <div class="board"></div>
+                    <div class="board blue"></div>
+                    <div class="board"></div>
+                    <div class="board"></div>
+                    <div class="board blue"></div>
+                    <div class="board"></div>
+                    <div class="board"></div>
+                    <div class="board blue"></div>
+                    <div class="board"></div>
+                    <div class="board blue"></div>
+                    <div class="board blue"></div>
+                    <div class="board"></div>
+                    <div class="board"></div>
+                    <div class="board"></div>
+                    <div class="board"></div>
+                </div>
+            </div>
+            <div class="yellow main-box">
+                <div class="inner-box">
+                    <div class="inner-innerbox yellow"></div>
+                    <div class="inner-innerbox yellow"></div>
+                    <div class="inner-innerbox yellow"></div>
+                    <div class="inner-innerbox yellow "></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        let container = document.getElementById('container')
+        let height = window.innerHeight
+        let width = window.innerWidth
+        console.log({height, width});
+
+        if(height < width){
+            container.style.height = `${height}px`
+            container.style.width = `${height}px`
+        }else{
+            container.style.width = `${width}px`
+            container.style.height = `${width}px`
+        }
+
+    </script>
+</body>
+
+</html>
